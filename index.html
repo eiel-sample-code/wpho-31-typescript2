@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body>
+    <h1>Hit & Blow</h1>
+
+    <div id="contents">
+      <input type="button" name="start" value="スタート" class="btn start">
+      <div id="card">
+
+      </div>
+
+      <div id="textarea">
+	<input type="text" id="inputValue"  />
+	<input type="button" value="入力" class="btn input" />
+      </div>
+      <div id="result"></div>
+      <input type="button" value="リタイア" class="btn retire" />
+    </div>
+
+    <div id="result"></div>
+
+    <div class="hidden">
+      <div class="resultView">
+	<dl>
+	  <dt>
+	    <span class="count">1</span>回目:
+	  </dt>
+	  <dd>
+	    <span class="input-text">xxx</span>
+	    <br />
+	    ヒット:<span class="hit">1</span>&nbsp;&nbsp;
+	    ブロー:<span class="blow"></span>
+	  </dd>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
